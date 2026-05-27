@@ -20,7 +20,7 @@
     </header>
     <main class="w-full relative">
       <section
-        class="h-[90dvh] relative border-b border-black w-full bg-no-repeat bg-[url('../images/hero_1.jpeg')] bg-center bg-cover"
+        class="hidden h-[90dvh] relative border-b border-black w-full bg-no-repeat bg-[url('../images/hero_1.jpeg')] bg-center bg-cover"
       >
         <nav class="w-full p-[15px] sticky top-0 rounded-xl">
           <div
@@ -171,13 +171,18 @@
           </div>
         </nav>
 
-        <div class="absolute w-full lg:w-fit  flex flex-col gap-3 p-7 pb-9 bottom-0 left-0">
-          <h1 class=" text-center lg:text-left text-6xl lg:text-8xl text-white font-rackless">
+        <div
+          class="absolute w-full lg:w-fit flex flex-col gap-3 p-7 pb-9 bottom-0 left-0"
+        >
+          <h1
+            class="text-center lg:text-left text-6xl lg:text-8xl text-white font-rackless"
+          >
             A cup that fits <br class="hidden lg:block" />
             the moment.
           </h1>
           <p class="text-center lg:text-left text-white">
-            From compostable whole leaf tea sachets and iced tea to <br class="hidden lg:block" />
+            From compostable whole leaf tea sachets and iced tea to
+            <br class="hidden lg:block" />
             tea lattes and matcha, we’ve got something for everyone.
           </p>
           <button
@@ -196,18 +201,366 @@
         </div>
       </section>
 
-      <section class="bg-[#FBF9EB] w-full py-22 flex flex-col gap-40">
-
-        <h1 class="text-center text-6xl font-rackless">
-          A <span class="italic">great</span> cup starts with a careful <br />
+      <section class="bg-[#FBF9EB] w-full py-22 pb-35 flex flex-col ">
+        <h1 class="text-center max-w-[80%] mx-auto text-3xl lg:text-6xl font-rackless mb-22 lg:mb-40">
+          A <span class="italic">great</span> cup starts with a careful <br class=" hidden lg:block" />
           pluck - the top two leaves and a bud.
         </h1>
 
-        <div
-          class="p-1 font-midnight font-bold text-5xl bg-[#daaeea] w-full sm:w-fit border rounded-md mx-auto -rotate-2 uppercase"
-        >
-          Best sellers
+        <div>
+          <!-- best seller tag -->
+          <div
+            class="left-5 relative p-1 font-midnight font-bold text-4xl lg:text-5xl bg-[#daaeea] w-fit border rounded-md lg:mx-auto -rotate-2 uppercase"
+          >
+            Best sellers
+          </div>
+
+          <!-- product scroller -->
+          <div
+            class=" w-full h-fit flex flex-nowrap overflow-scroll gap-5 p-5 lg:p-10 pt-10 lg:pt-16"
+          >
+
+            <!-- card 1 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product1.png)] bg-contain bg-no-repeat bg-[#C9EC9A]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Tea Sachets
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 4.71 (84)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">
+                  Organic Tropical Green Tea
+                </h1>
+                <p>From $11.95</p>
+                <p class="text-zinc-600 text-sm">
+                  Our Organic Tropical Green is a fruity and fun take on a
+                  classic green tea.
+                </p>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product2.png)] bg-contain bg-no-repeat bg-[#FFD985]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Gifts & Samplers
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 5 (2)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">Herbal Tea Trio</h1>
+                <p>$33.30</p>
+                <p class="text-zinc-600 text-sm">
+                  A trio of soothing herbal teas.
+                </p>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product3.png)] bg-contain bg-no-repeat bg-[#B8F0D0]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Naked Sachets
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 5 (11)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">
+                  Organic Peppermint - 50 Naked Tea Sachets
+                </h1>
+                <p>$21.95</p>
+                <p class="text-zinc-600 text-sm">
+                  Our organic Peppermint tea is made from peppermint grown in
+                  Washington State.
+                </p>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product4.png)] bg-contain bg-no-repeat bg-[#CFEAFF]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Gifts & Samplers
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 4.85 (41)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">Classic Bamboo Tea Chest</h1>
+                <p>$42.95</p>
+                <p class="text-zinc-600 text-sm">
+                  This 6-slot bamboo box offers a sampling of eight sachets each
+                  of six of our best selling teas.
+                </p>
+              </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product5.png)] bg-contain bg-no-repeat bg-[#CBE86C]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Latte Mix
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 4.41 (22)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">Nice Matcha Tea Latte Mix</h1>
+                <p>From $12.95</p>
+                <p class="text-zinc-600 text-sm">
+                  Our Nice Matcha is a lightly sweetened powdered mix meant for
+                  making tea lattes simple.
+                </p>
+              </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product6.png)] bg-contain bg-no-repeat bg-[#F7C88F]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Latte Mix
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 4.24 (17)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">Nice Chai Tea Latte Mix</h1>
+                <p>From $12.95</p>
+                <p class="text-zinc-600 text-sm">
+                  Our Nice Chai is a not too sweet, not too spicy, powdered
+                  latte mix meant for making tea lattes simple.
+                </p>
+              </div>
+            </div>
+
+            <!-- card 7 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product7.png)] bg-contain bg-no-repeat bg-[#FFD6C7]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Tea Sachets
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 4.79 (108)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">
+                  Organic Mountain High Chai Tea
+                </h1>
+                <p>From $11.95</p>
+                <p class="text-zinc-600 text-sm">
+                  An ode to our Rocky Mountain roots, our organic Mountain High
+                  Chai takes your tastebuds down a spice-filled ski slope.
+                </p>
+              </div>
+            </div>
+
+            <!-- card 8 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product8.png)] bg-contain bg-no-repeat bg-[#D9E8FF]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Naked Sachets
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 4.56 (41)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">
+                  Organic Earl Grey - 50 Naked Tea Sachets
+                </h1>
+                <p>$21.95</p>
+                <p class="text-zinc-600 text-sm">
+                  Earl Grey's distinctive aroma comes from bergamot - a citrus
+                  fruit about the size of an orange but yellow-green and
+                  slightly pear-shaped.
+                </p>
+              </div>
+            </div>
+
+            <!-- card 9 -->
+            <div class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0">
+              <div
+                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product9.png)] bg-contain bg-no-repeat bg-[#BFE6FF]"
+              >
+                <div class="flex justify-between items-start">
+                  <div class="border bg-white rounded-sm">
+                    <p
+                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                    >
+                      Naked Sachets
+                    </p>
+                  </div>
+                  <p class="flex gap-2 text-sm">
+                    <img src="../images/star.svg" alt="star" /> 5 (5)
+                  </p>
+                </div>
+
+                <div
+                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
+                >
+                  <i class="ri-add-large-line"></i>
+                  <span class="uppercase">add</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col text-left gap-2">
+                <h1 class="font-rackless text-xl">
+                  Alpine Berry - 15 Naked Tea Sachets
+                </h1>
+                <p>From $8.95</p>
+                <p class="text-zinc-600 text-sm">
+                  Our signature herbal blend, Alpine Berry is a caffeine-free,
+                  naturally sweet and tart tea.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        </div>
+        <button
+          class="bg-[#2A2857] py-4 px-15 text-[16px] w-fit mx-auto text-white rounded-full"
+        >
+          Explore All Teas
+        </button>
       </section>
     </main>
   </body>
