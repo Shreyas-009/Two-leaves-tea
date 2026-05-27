@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Reckless";
+  src: url("../fonts/RecklessCondensedS-TRIAL-Book.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Midnight";
+  src: url("../fonts/midnight-sans-rd-12-medium-trial.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme{
+  --font-robot : "RobotoMono";
+  --font-rackless : "Reckless";
+  --font-midnight : "Midnight";
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
