@@ -130,7 +130,7 @@
       </header>
       <!-- hero section -->
       <section
-        class="h-[90dvh] relative border-b border-black w-full bg-no-repeat bg-[url('../images/hero_1.jpeg')] bg-center bg-cover"
+        class="hidden h-[90dvh] relative border-b border-black w-full bg-no-repeat bg-[url('../images/hero_1.jpeg')] bg-center bg-cover"
       >
         <div
           class="absolute w-full lg:w-fit flex flex-col gap-3 p-7 pb-9 bottom-0 left-0"
@@ -164,7 +164,7 @@
 
       <!-- product section -->
       <section
-        class="bg-[#FBF9EB] w-full py-22 lg:pb-35 flex flex-col border-b-2"
+        class="hidden bg-[#FBF9EB] w-full py-22 lg:pb-35 flex flex-col border-b-2"
       >
         <h1
           class="text-center max-w-[80%] mx-auto text-3xl lg:text-6xl font-rackless mb-22 lg:mb-40"
@@ -548,7 +548,7 @@
       </section>
 
       <!-- discover section -->
-      <section class="bg-[#FBF9EB] py-18 lg:py-34">
+      <section class="hidden bg-[#FBF9EB] py-18 lg:py-34">
         <div
           class="flex flex-col max-w-[1024px] mx-auto px-4 w-full gap-8 lg:gap-28"
         >
@@ -664,7 +664,7 @@
 
       <!-- origins section -->
       <section
-        class="relative flex flex-col gap-32 pb-16 pt-28 md:py-28 px-4 items-center bg-[url('../images/origins.jpeg')] bg-cover bg-no-repeat"
+        class="hidden relative flex flex-col gap-32 pb-16 pt-28 md:py-28 px-4 items-center bg-[url('../images/origins.jpeg')] bg-cover bg-no-repeat"
       >
         <div
           data-scroll
@@ -673,6 +673,7 @@
         >
           <img class="w-32 h-32" src="../images/origins_top.svg" alt="cattle" />
         </div>
+
         <div
           class="p-1 mt-20 tracking-wider font-midnight font-semibold text-4xl md:text-6xl bg-[#A3C9FD] w-fit border rounded-md -rotate-2 uppercase"
         >
@@ -746,6 +747,228 @@
         >
           Our Story
         </button>
+      </section>
+
+      <!-- reviews section -->
+      <section class="bg-[#FBF9EB] py-18 lg:py-34 flex flex-col gap-8 lg:gap-22">
+        <div
+          class="flex flex-col gap-6 lg:gap-7 items-start justify-start max-w-[1024px] mx-auto px-[40px] w-full"
+        >
+          <div
+            class="p-1 font-midnight font-bold text-4xl lg:text-6xl bg-[#72BB25] w-fit border rounded-md -rotate-2 uppercase"
+          >
+            Reviews
+          </div>
+          <div class="flex flex-col gap-14 lg:gap-8">
+            <h1
+              class="text-3xl hidden lg:block lg:text-6xl font-rackless leading-none lg:leading-[75px]"
+            >
+              Loved by tea people everywhere.
+              <br class="hidden lg:block" />
+
+              Here’s what they’re saying.
+            </h1>
+          </div>
+        </div>
+
+        <div class="flex flex-nowrap gap-4 overflow-auto px-7">
+          <!-- card 1 -->
+          <div
+            class="h-[440px] w-[325px] lg:w-[280px] shrink-0 flex flex-col p-2 border bg-[#F5AF8A] rounded-2xl"
+          >
+            <div class="flex-1 flex flex-col gap-4 items-center justify-center">
+              <h1
+                class="text-[32px] leading-[32.5px] text-center font-rackless"
+              >
+                “The right amount <br />
+                of spice.”
+              </h1>
+              <p class="text-black opacity-50 text-sm">Angelina R.</p>
+            </div>
+
+            <div
+              class="w-full h-[105px] flex justify-center border bg-[#EA6D44] rounded-2xl"
+            >
+              <img
+                class="w-[30%] object-contain"
+                src="../images/r_product1.png"
+                alt="product1"
+              />
+              <div class="flex items-center gap-2 border-l p-2">
+                <p class="text-sm leading-[12.5px] text-white uppercase">
+                  Organic Mountain High Chai
+                </p>
+                <button
+                  class="flex items-center justify-center text-[18px] hover:text-[12px] border bg-white rounded-full"
+                >
+                  <span
+                    class="h-[50px] w-[70px] teansition-all duration-300 flex items-center justify-center"
+                  >
+                    Shop
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="h-[440px] w-[325px] lg:w-[280px] shrink-0 flex flex-col p-2 border bg-[#ABDF74] rounded-2xl"
+          >
+            <div class="flex-1 flex flex-col gap-4 items-center justify-center">
+              <h1
+                class="text-[24px] leading-[24.5px] text-center font-rackless"
+              >
+                “This drink is incredibly<br> refreshing, especially<br> when served
+                over ice. It’s<br> light, crisp, and instantly<br> cooling, making it<br>
+                perfect for a quick<br> refresh any time of day. ”
+              </h1>
+              <p class="text-black opacity-50 text-sm">Jacob K.</p>
+            </div>
+
+            <div
+              class="w-full h-[105px] flex justify-center border bg-[#73BC25] rounded-2xl"
+            >
+              <img
+                class="w-[30%] object-contain"
+                src="../images/r_product2.png"
+                alt="product2"
+              />
+              <div class="flex items-center gap-2 border-l p-2">
+                <p class="text-sm leading-[12.5px] text-white uppercase">
+                  Organic Matcha Mint
+                </p>
+                <button
+                  class="flex items-center justify-center text-[18px] hover:text-[12px] border bg-white rounded-full"
+                >
+                  <span
+                    class="h-[50px] w-[70px] teansition-all duration-300 flex items-center justify-center"
+                  >
+                    Shop
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="h-[440px] w-[325px] lg:w-[280px] shrink-0 flex flex-col p-2 border bg-[#FFD265] rounded-2xl"
+          >
+            <div class="flex-1 flex flex-col gap-4 items-center justify-center">
+              <h1
+                class="text-[24px] leading-[32.5px] text-center font-rackless"
+              >
+                “One sip and you can<br> feel the difference—<br>clean energy , rich
+                flavor,<br> and all the good stuff<br> your body loves. Literally<br> liquid
+                GOLD.”
+              </h1>
+              <p class="text-black opacity-50 text-sm">Harrison G.</p>
+            </div>
+
+            <div
+              class="w-full h-[105px] flex justify-center border bg-[#FFB500] rounded-2xl"
+            >
+              <img
+                class="w-[30%] object-contain"
+                src="../images/r_product3.png"
+                alt="product3"
+              />
+              <div class="flex items-center gap-2 border-l p-2">
+                <p class="text-sm leading-[12.5px] text-white uppercase">
+                  Two Roots Golden Latte Mix
+                </p>
+                <button
+                  class="flex items-center justify-center text-[18px] hover:text-[12px] border bg-white rounded-full"
+                >
+                  <span
+                    class="h-[50px] w-[70px] teansition-all duration-300 flex items-center justify-center"
+                  >
+                    Shop
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div
+            class="h-[440px] w-[325px] lg:w-[280px] shrink-0 flex flex-col p-2 border bg-[#ABDF74] rounded-2xl"
+          >
+            <div class="flex-1 flex flex-col gap-4 items-center justify-center">
+              <h1
+                class="text-[32px] leading-[32.5px] text-center font-rackless"
+              >
+                “Soo tasty and<br> energizing.”
+              </h1>
+              <p class="text-black opacity-50 text-sm">
+                Gracie M.
+              </p>
+            </div>
+
+            <div
+              class="w-full h-[105px] flex justify-center border bg-[#73BC25] rounded-2xl"
+            >
+              <img
+                class="w-[30%] object-contain"
+                src="../images/r_product4.png"
+                alt="product4"
+              />
+              <div class="flex items-center gap-2 border-l p-2">
+                <p class="text-sm leading-[12.5px] text-white uppercase">
+                  Organic Matcha Mint
+                </p>
+                <button
+                  class="flex items-center justify-center text-[18px] hover:text-[12px] border bg-white rounded-full"
+                >
+                  <span
+                    class="h-[50px] w-[70px] teansition-all duration-300 flex items-center justify-center"
+                  >
+                    Shop
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div
+            class="h-[440px] w-[325px] lg:w-[280px] shrink-0 flex flex-col p-2 border bg-[#D9C2E1] rounded-2xl"
+          >
+            <div class="flex-1 flex flex-col gap-4 items-center justify-center">
+              <h1
+                class="text-[32px] leading-[32.5px] text-center font-rackless"
+              >
+                “The perfect start<br> to my day.”
+              </h1>
+              <p class="text-black opacity-50 text-sm">Jorge F.</p>
+            </div>
+
+            <div
+              class="w-full h-[105px] flex justify-center border bg-[#C790DB] rounded-2xl"
+            >
+              <img
+                class="w-[30%] object-contain"
+                src="../images/r_product5.png"
+                alt="product5"
+              />
+              <div class="flex items-center gap-2 border-l p-2">
+                <p class="text-sm leading-[12.5px] text-white uppercase">
+                  Jasmine Petal
+                </p>
+                <button
+                  class="flex items-center justify-center text-[18px] hover:text-[12px] border bg-white rounded-full"
+                >
+                  <span
+                    class="h-[50px] w-[70px] teansition-all duration-300 flex items-center justify-center"
+                  >
+                    Shop
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
