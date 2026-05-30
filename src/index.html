@@ -31,7 +31,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-[#C0DBFF]">
     <!-- navbar -->
     <nav class="w-full p-[15px] fixed top-[37px] left-0 z-50">
       <div
@@ -85,9 +85,9 @@
             <ol
               class="hidden lg:flex gap-6 uppercase text-[12px] font-robot font-medium tracking-wider"
             >
-              <li class="text-nowrap">my account</li>
-              <li class="text-nowrap">cafe & wholesale partners</li>
-              <li class="text-nowrap">tea journal</li>
+              <li class="text-nowrap hover-underline">my account</li>
+              <li class="text-nowrap hover-underline">cafe & wholesale partners</li>
+              <li class="text-nowrap hover-underline">tea journal</li>
             </ol>
 
             <!-- cart icon -->
@@ -130,7 +130,7 @@
       </header>
       <!-- hero section -->
       <section
-        class="hidden h-[90dvh] relative border-b border-black w-full bg-no-repeat bg-[url('../images/hero_1.jpeg')] bg-center bg-cover"
+        class=" h-[90dvh] relative border-b border-black w-full bg-no-repeat bg-[url('../images/hero_1.jpeg')] bg-center bg-cover"
       >
         <div
           class="absolute w-full lg:w-fit flex flex-col gap-3 p-7 pb-9 bottom-0 left-0"
@@ -147,7 +147,7 @@
             tea lattes and matcha, we’ve got something for everyone.
           </p>
           <button
-            class="py-4 px-16 flex justify-center items-center rounded-full w-full font-medium lg:w-fit bg-[#2a2857] text-white"
+            class="py-4 px-16 flex justify-center items-center rounded-full w-full font-medium lg:w-fit bg-[#2a2857] hover:bg-white hover:text-black text-white"
           >
             Shop Now
           </button>
@@ -164,7 +164,7 @@
 
       <!-- product section -->
       <section
-        class="hidden bg-[#FBF9EB] w-full py-22 lg:pb-35 flex flex-col border-b-2"
+        class=" bg-[#FBF9EB] w-full py-22 lg:pb-35 flex flex-col border-b-2"
       >
         <h1
           class="text-center max-w-[80%] mx-auto text-3xl lg:text-6xl font-rackless mb-22 lg:mb-40"
@@ -191,26 +191,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product1.png)] bg-contain bg-no-repeat bg-[#C9EC9A]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#C9EC9A]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Tea Sachets
+                <div
+                  class="absolute inset-0 bg-[url(../images/product1.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Tea Sachets
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 4.71 (84)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 4.71 (84)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -231,26 +237,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product2.png)] bg-contain bg-no-repeat bg-[#FFD985]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#FFD985]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Gifts & Samplers
+                <div
+                  class="absolute inset-0 bg-[url(../images/product2.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Gifts & Samplers
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 5 (2)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 5 (2)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -268,26 +280,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product3.png)] bg-contain bg-no-repeat bg-[#B8F0D0]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#B8F0D0]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Naked Sachets
+                <div
+                  class="absolute inset-0 bg-[url(../images/product3.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Naked Sachets
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 5 (11)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 5 (11)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -308,26 +326,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product4.png)] bg-contain bg-no-repeat bg-[#CFEAFF]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#CFEAFF]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Gifts & Samplers
+                <div
+                  class="absolute inset-0 bg-[url(../images/product4.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Gifts & Samplers
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 4.85 (41)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 4.85 (41)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -346,26 +370,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product5.png)] bg-contain bg-no-repeat bg-[#CBE86C]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#CBE86C]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Latte Mix
+                <div
+                  class="absolute inset-0 bg-[url(../images/product5.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Latte Mix
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 4.41 (22)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 4.41 (22)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -384,26 +414,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product6.png)] bg-contain bg-no-repeat bg-[#F7C88F]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#F7C88F]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Latte Mix
+                <div
+                  class="absolute inset-0 bg-[url(../images/product6.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Latte Mix
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 4.24 (17)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 4.24 (17)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -422,26 +458,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product7.png)] bg-contain bg-no-repeat bg-[#FFD6C7]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#FFD6C7]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Tea Sachets
+                <div
+                  class="absolute inset-0 bg-[url(../images/product7.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Tea Sachets
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 4.79 (108)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 4.79 (108)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -462,26 +504,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product8.png)] bg-contain bg-no-repeat bg-[#D9E8FF]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#D9E8FF]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Naked Sachets
+                <div
+                  class="absolute inset-0 bg-[url(../images/product8.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Naked Sachets
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 4.56 (41)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 4.56 (41)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -503,26 +551,32 @@
               class="w-[300px] lg:w-[320px] h-auto flex flex-col gap-3 shrink-0"
             >
               <div
-                class="h-[360px] flex flex-col rounded-sm border p-4 justify-between bg-[url(../images/product9.png)] bg-contain bg-no-repeat bg-[#BFE6FF]"
+                class="group relative h-[360px] overflow-hidden rounded-sm border bg-[#BFE6FF]"
               >
-                <div class="flex justify-between items-start">
-                  <div class="border bg-white rounded-sm">
-                    <p
-                      class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
-                    >
-                      Naked Sachets
+                <div
+                  class="absolute inset-0 bg-[url(../images/product9.png)] bg-contain bg-center bg-no-repeat transition-transform duration-500 ease-out group-hover:scale-110"
+                ></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <div class="border bg-white rounded-sm">
+                      <p
+                        class="uppercase text-xl px-1 font-bold font-midnight tracking-wider"
+                      >
+                        Naked Sachets
+                      </p>
+                    </div>
+                    <p class="flex gap-2 text-sm">
+                      <img src="../images/star.svg" alt="star" /> 5 (5)
                     </p>
                   </div>
-                  <p class="flex gap-2 text-sm">
-                    <img src="../images/star.svg" alt="star" /> 5 (5)
-                  </p>
-                </div>
 
-                <div
-                  class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white px-3 py-1.5 border w-fit rounded-lg"
-                >
-                  <i class="ri-add-large-line"></i>
-                  <span class="uppercase">add</span>
+                  <div
+                    class="self-end text-xs flex flex-col justify-center items-center gap-1 bg-white hover:bg-[#2a2857] hover:text-white px-3 py-1.5 border w-fit rounded-lg cursor-pointer transition-colors"
+                  >
+                    <i class="ri-add-large-line"></i>
+                    <span class="uppercase">add</span>
+                  </div>
                 </div>
               </div>
 
@@ -664,7 +718,7 @@
 
       <!-- origins section -->
       <section
-        class="hidden relative flex flex-col gap-32 pb-16 pt-28 md:py-28 px-4 items-center bg-[url('../images/origins.jpeg')] bg-cover bg-no-repeat"
+        class=" relative flex flex-col gap-32 pb-16 pt-28 md:py-28 px-4 items-center bg-[url('../images/origins.jpeg')] bg-cover bg-no-repeat"
       >
         <div
           data-scroll
@@ -1136,7 +1190,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1164,7 +1218,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1192,7 +1246,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1220,7 +1274,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1248,7 +1302,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1276,7 +1330,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1304,7 +1358,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1332,7 +1386,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1360,7 +1414,7 @@
             class="group h-[398px] w-[325px] shrink-0 flex flex-col border bg-[#2A2857] rounded-2xl overflow-hidden"
           >
             <div
-              class="relative flex-1 flex flex-col gap-4 items-center justify-center"
+              class="relative overflow-hidden flex-1 flex flex-col gap-4 items-center justify-center"
             >
               <div
                 class="absolute z-10 w-fit top-4 left-4 border bg-white rounded-sm"
@@ -1385,12 +1439,720 @@
             </div>
           </div>
         </div>
-         <button
+        <button
           class="bg-[#2A2857] py-4 px-15 text-[16px] w-fit mx-auto text-white hover:text-black border hover:bg-white rounded-full"
         >
           Explore The Tea Journal
         </button>
       </section>
+
+      <!-- company section -->
+      <section
+        class="flex flex-col h-fit items-start bg-[url('../images/company_img.png')] p-0 md:p-10 border-b bg-cover bg-no-repeat"
+      >
+        <div class="w-full h-[50vh] sm:h-[100vh] block md:hidden">
+          <img
+            class="w-full h-full object-cover"
+            src="../images/company_img.png"
+            alt="company banner image"
+          />
+        </div>
+        <div
+          class="flex flex-col py-16 px-10 md:px-10 md:py-20 w-full md:w-[450px] h-fit justify-between bg-[#F26412] md:border md:rounded-xl"
+        >
+          <h1
+            class="text-[46px] leading-[47.5px] md:leading-none md:text-6xl font-rackless text-white mb-12 md:mb-[230px] text-center md:text-left"
+          >
+            Great Tea.<br />
+            In Good<br class="hidden md:block" />Company.
+          </h1>
+          <div class="flex flex-col gap-12">
+            <p class="text-xl text-white text-center md:text-left">
+              Discover the people, places, and purpose behind every blend.
+            </p>
+
+            <button
+              class="py-4 px-22 flex justify-center items-center rounded-full w-full font-medium lg:w-fit bg-white hover:bg-[#2a2857] hover:text-white border border-black"
+            >
+              About us
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section -->
+      <footer class="w-full bg-[#C0DBFF] flex flex-col pt-16 lg:pt-20">
+        <div
+          class="max-w-[1100px] mx-auto px-6 md:px-8 w-full flex flex-col lg:flex-row lg:justify-between lg:items-end gap-12 pb-16"
+        >
+          <div class="flex flex-col gap-5 max-w-2xl">
+            <h2
+              class="font-midnight font-bold text-[32px] md:text-[40px] uppercase tracking-wider text-[#2A2857]"
+            >
+              STEEP WITH US
+            </h2>
+            <p
+              class="font-rackless text-zinc-800 text-[20px] md:text-[32px] font-light leading-relaxed"
+            >
+              Get news stories, brewing tips, and special offers <br />
+              straight to your inbox.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full mt-2">
+              <input
+                type="email"
+                placeholder="name@email.com"
+                class="bg-white border border-black rounded-2xl px-6 py-3 text-lg font-robot w-full sm:w-[380px] outline-none text-black placeholder:text-zinc-400"
+              />
+              <button
+                type="submit"
+                class="bg-[#2A2857] text-white hover:bg-white hover:text-[#2A2857] border border-[#2A2857] rounded-full px-12 py-3 text-lg font-medium transition-colors cursor-pointer text-center"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+
+          <!-- footer icons -->
+          <div class="flex gap-4 items-center">
+            <a
+              href="#"
+              class="w-[50px] h-[50px] rounded-full border border-black flex items-center justify-center text-xl md:text-[26px] hover:bg-white hover:scale-90"
+              aria-label="Facebook"
+            >
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a
+              href="#"
+              class="w-[50px] h-[50px] rounded-full border border-black flex items-center justify-center text-xl md:text-[26px] hover:bg-white hover:scale-90"
+              aria-label="Instagram"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="#"
+              class="w-[50px] h-[50px] rounded-full border border-black flex items-center justify-center text-xl md:text-[26px] hover:bg-white hover:scale-90"
+              aria-label="LinkedIn"
+            >
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="px-4 md:px-8 w-full mb-12">
+          <div class="bg-[#2A2857] rounded-2xl p-6 md:p-12 lg:p-10">
+            <!-- desktop faq -->
+            <div class="hidden lg:flex flex-col gap-12">
+              <div class="flex gap-12 flex-wrap md:flex-nowrap">
+                <div class="min-w-[250px]">
+                  <h3 class="font-rackless text-2xl text-white mb-6">
+                    Tea Varieties
+                  </h3>
+                  <ul
+                    class="flex flex-col gap-1 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Whole Leaf Tea Sachets</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Pure Matcha</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Tea Lattes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Iced Tea</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="min-w-[250px]">
+                  <h3 class="font-rackless text-2xl text-white mb-6">
+                    Collections
+                  </h3>
+                  <ul
+                    class="flex flex-col gap-1 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Matcha</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Chai</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Organic Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Naked Tea Sachets</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Black Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Green Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Herbal Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Caffeine-Free</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Gift & Samplers</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="min-w-[250px]">
+                  <h3 class="font-rackless text-2xl text-white mb-6">Lattes</h3>
+                  <ul
+                    class="flex flex-col gap-1 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Nice Matcha</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Barista Matcha</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Nice Chai</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Barista Chai</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Two Roots Golden Latte Mix</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="min-w-[250px]">
+                  <h3 class="font-rackless text-2xl text-white mb-6">Learn</h3>
+                  <ul
+                    class="flex flex-col gap-1 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Our Story</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Our Spirit</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >FAQ</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Reviews</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="min-w-[250px]">
+                  <h3 class="font-rackless text-2xl text-white mb-6">
+                    Tea Journal
+                  </h3>
+                  <ul
+                    class="flex flex-col gap-1 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >All Articles</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Tea 101</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Recipes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Sustainability</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="flex gap-12">
+                <div class="min-w-[250px]">
+                  <h3 class="font-rackless text-2xl text-white mb-6">
+                    Support
+                  </h3>
+                  <ul
+                    class="flex flex-col gap-1 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Contact</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >My Account</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Loyal-Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Shipping & Returns</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Terms & Conditions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="min-w-[250px]">
+                  <h3 class="font-rackless text-2xl text-white mb-6">
+                    Cafe & Wholesale Partners
+                  </h3>
+                  <ul
+                    class="flex flex-col gap-1 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Cafe & Wholesale Partners</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Wholesale Login</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Product and Media Files</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Displays & Starter Kits</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- mobile faq-->
+            <div class="block lg:hidden flex flex-col divide-y divide-white/10">
+              <details class="group py-4 accordion-item">
+                <summary
+                  class="w-full flex justify-between items-center text-left py-0 focus:outline-none cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+                >
+                  <span class="font-rackless text-3xl text-white"
+                    >Tea Varieties</span
+                  >
+                  <span
+                    class="w-7 h-7 rounded-full flex items-center justify-center bg-[#A3C9FD] group-open:bg-[#FFB500] transition-all duration-300 accordion-icon-bg"
+                  >
+                    <i
+                      class="ri-arrow-down-s-line text-xl text-[#2A2857] group-open:rotate-180 transition-transform duration-300 accordion-icon"
+                    ></i>
+                  </span>
+                </summary>
+                <div class="accordion-content">
+                  <ul
+                    class="flex flex-col gap-1 pt-4 pb-2 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Whole Leaf Tea Sachets</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Pure Matcha</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Tea Lattes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Iced Tea</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group py-4 accordion-item">
+                <summary
+                  class="w-full flex justify-between items-center text-left py-0 focus:outline-none cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+                >
+                  <span class="font-rackless text-3xl text-white"
+                    >Collections</span
+                  >
+                  <span
+                    class="w-7 h-7 rounded-full flex items-center justify-center bg-[#A3C9FD] group-open:bg-[#FFB500] transition-all duration-300 accordion-icon-bg"
+                  >
+                    <i
+                      class="ri-arrow-down-s-line text-xl text-[#2A2857] group-open:rotate-180 transition-transform duration-300 accordion-icon"
+                    ></i>
+                  </span>
+                </summary>
+                <div class="accordion-content">
+                  <ul
+                    class="flex flex-col gap-1 pt-4 pb-2 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Matcha</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Chai</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Organic Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Naked Tea Sachets</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Black Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Green Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Herbal Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Caffeine-Free</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Gift & Samplers</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group py-4 accordion-item">
+                <summary
+                  class="w-full flex justify-between items-center text-left py-0 focus:outline-none cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+                >
+                  <span class="font-rackless text-3xl text-white">Lattes</span>
+                  <span
+                    class="w-7 h-7 rounded-full flex items-center justify-center bg-[#A3C9FD] group-open:bg-[#FFB500] transition-all duration-300 accordion-icon-bg"
+                  >
+                    <i
+                      class="ri-arrow-down-s-line text-xl text-[#2A2857] group-open:rotate-180 transition-transform duration-300 accordion-icon"
+                    ></i>
+                  </span>
+                </summary>
+                <div class="accordion-content">
+                  <ul
+                    class="flex flex-col gap-1 pt-4 pb-2 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Nice Matcha</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Barista Matcha</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Nice Chai</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Barista Chai</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Two Roots Golden Latte Mix</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group py-4 accordion-item">
+                <summary
+                  class="w-full flex justify-between items-center text-left py-0 focus:outline-none cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+                >
+                  <span class="font-rackless text-3xl text-white">Learn</span>
+                  <span
+                    class="w-7 h-7 rounded-full flex items-center justify-center bg-[#A3C9FD] group-open:bg-[#FFB500] transition-all duration-300 accordion-icon-bg"
+                  >
+                    <i
+                      class="ri-arrow-down-s-line text-xl text-[#2A2857] group-open:rotate-180 transition-transform duration-300 accordion-icon"
+                    ></i>
+                  </span>
+                </summary>
+                <div class="accordion-content">
+                  <ul
+                    class="flex flex-col gap-1 pt-4 pb-2 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Our Story</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Our Spirit</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >FAQ</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Reviews</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group py-4 accordion-item">
+                <summary
+                  class="w-full flex justify-between items-center text-left py-0 focus:outline-none cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+                >
+                  <span class="font-rackless text-3xl text-white"
+                    >Tea Journal</span
+                  >
+                  <span
+                    class="w-7 h-7 rounded-full flex items-center justify-center bg-[#A3C9FD] group-open:bg-[#FFB500] transition-all duration-300 accordion-icon-bg"
+                  >
+                    <i
+                      class="ri-arrow-down-s-line text-xl text-[#2A2857] group-open:rotate-180 transition-transform duration-300 accordion-icon"
+                    ></i>
+                  </span>
+                </summary>
+                <div class="accordion-content">
+                  <ul
+                    class="flex flex-col gap-1 pt-4 pb-2 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >All Articles</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Tea 101</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Recipes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Sustainability</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group py-4 accordion-item">
+                <summary
+                  class="w-full flex justify-between items-center text-left py-0 focus:outline-none cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+                >
+                  <span class="font-rackless text-3xl text-white">Support</span>
+                  <span
+                    class="w-7 h-7 rounded-full flex items-center justify-center bg-[#A3C9FD] group-open:bg-[#FFB500] transition-all duration-300 accordion-icon-bg"
+                  >
+                    <i
+                      class="ri-arrow-down-s-line text-xl text-[#2A2857] group-open:rotate-180 transition-transform duration-300 accordion-icon"
+                    ></i>
+                  </span>
+                </summary>
+                <div class="accordion-content">
+                  <ul
+                    class="flex flex-col gap-1 pt-4 pb-2 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Contact</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >My Account</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Loyal-Tea</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Shipping & Returns</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Terms & Conditions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group py-4 accordion-item border-0">
+                <summary
+                  class="w-full flex justify-between items-center text-left py-0 focus:outline-none cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+                >
+                  <span class="font-rackless text-3xl text-white"
+                    >Cafe & Wholesale <br />
+                    Partners</span
+                  >
+                  <span
+                    class="w-7 h-7 rounded-full flex items-center justify-center bg-[#A3C9FD] group-open:bg-[#FFB500] transition-all duration-300 accordion-icon-bg"
+                  >
+                    <i
+                      class="ri-arrow-down-s-line text-xl text-[#2A2857] group-open:rotate-180 transition-transform duration-300 accordion-icon"
+                    ></i>
+                  </span>
+                </summary>
+                <div class="accordion-content">
+                  <ul
+                    class="flex flex-col gap-1 pt-4 pb-2 font-robot text-sm text-[#fbf9eb] opacity-50"
+                  >
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Cafe & Wholesale Partners</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Wholesale Login</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Product and Media Files</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover-underline hover:text-white transition-colors"
+                        >Displays & Starter Kits</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer bottom part -->
+        <div
+          class="bg-[#C0DBFF] bg-[url('../images/footer_background.png')] bg-bottom bg-cover bg-no-repeat w-full h-[350px] lg:h-[550px] flex flex-col justify-between items-center pt-10 pb-6 relative"
+        >
+          <div class="z-10 flex flex-col items-center">
+            <img
+              class="w-[220px] lg:w-[320px]"
+              src="../images/footer_logo.svg"
+              alt="loho"
+            />
+          </div>
+          <div
+            class="z-10 text-center font-robot text-[10px] md:text-[12px] text-black tracking-widest leading-relaxed uppercase"
+          >
+            <p>© TWO LEAVES AND A BUD 2026</p>
+            <p>SITE BY Shreyas Tungar</p>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- Import Locomotive Scroll JS -->

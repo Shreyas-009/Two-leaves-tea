@@ -48,3 +48,23 @@ body {
 ::-webkit-scrollbar{
   width: 0;
 }
+
+.hover-underline {
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  height: 1.5px;
+  width: 0%;
+  background-color: currentColor;
+  transition: 0.4s ease-in-out;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
